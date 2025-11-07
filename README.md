@@ -1,283 +1,320 @@
-# 🔐 WhisperChain
+# 🔗 WhisperChain - Web3 Multi-Language Playground
 
-**Decentralized Encrypted Chat on Solana**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/pavlenkotm/WhisperChain?style=social)](https://github.com/pavlenkotm/WhisperChain)
+[![Commits](https://img.shields.io/github/commit-activity/m/pavlenkotm/WhisperChain)](https://github.com/pavlenkotm/WhisperChain/commits)
+[![Languages](https://img.shields.io/badge/languages-15%2B-brightgreen)]()
 
-WhisperChain is a fully decentralized, end-to-end encrypted chat application built on the Solana blockchain. Every message is an encrypted transaction, with no centralized servers and no metadata storage.
+> **Professional blockchain development examples across 15+ programming languages**
+> From EVM smart contracts to Layer 2 solutions, backend services to mobile SDKs
 
-## ✨ Features
+## 🌟 What is WhisperChain?
 
-- 🔒 **End-to-End Encryption**: Uses Diffie-Hellman key exchange + AES-256 encryption
-- 🌐 **Fully Decentralized**: All data stored on Solana blockchain, no servers
-- 🔥 **Self-Destructing Messages**: Set expiration times for messages
-- 👻 **Anonymous**: No metadata, no tracking, complete privacy
-- ⚡ **Real-time Updates**: On-chain polling with visual indicators for new messages
-- 💰 **Low Cost**: Leverages Solana's low transaction fees
-- 🎨 **Beautiful UI**: Modern interface built with React + Tailwind CSS
+WhisperChain started as a decentralized encrypted chat application on Solana and has evolved into a **comprehensive showcase of Web3 development across multiple blockchains, languages, and platforms**.
 
-## 🏗️ Architecture
+This repository demonstrates **production-quality code** for:
+- ✅ Smart contract development (EVM, Solana, Move, Cairo, Substrate)
+- ✅ Backend services and APIs
+- ✅ Mobile wallet SDKs
+- ✅ High-performance crypto libraries
+- ✅ Deployment automation
 
-### Smart Contract (Rust)
-- **Location**: `/program`
-- **Tech Stack**: Solana Program (Rust), Borsh serialization
-- **Features**:
-  - Initialize encrypted chats between two participants
-  - Send encrypted messages (stored on-chain)
-  - Delete chats and messages (self-destruct)
-  - Automatic message expiration
+## 🎯 Quick Navigation
 
-### Frontend (React + TypeScript)
-- **Location**: `/app`
-- **Tech Stack**: React, TypeScript, Tailwind CSS, Solana Wallet Adapter
-- **Features**:
-  - Phantom wallet integration
-  - Client-side encryption/decryption
-  - Real-time message polling
-  - Self-destruct message UI
-  - Responsive design
+| Category | Languages | Examples |
+|----------|-----------|----------|
+| **Smart Contracts** | Solidity, Vyper, Rust, Move, Cairo, Haskell | [ERC-20](#solidity), [NFTs](#solidity), [DeFi](#move) |
+| **Backend Services** | Python, TypeScript, Go, Java | [Web3 APIs](#python), [Indexers](#go) |
+| **Mobile SDKs** | Swift, Java/Kotlin | [iOS Wallet](#swift), [Android](#java) |
+| **Performance** | C++, Rust, Zig | [Crypto Primitives](#cpp), [WASM](#zig) |
+| **DevOps** | Bash, Docker | [Deployment](#bash), [CI/CD](#github-actions) |
+| **Frontend** | TypeScript, HTML/CSS | [DApp UI](#typescript), [Landing Page](#html-css) |
 
-### Cryptography
-- **Key Exchange**: Elliptic Curve Diffie-Hellman (Curve25519)
-- **Encryption**: AES-256-GCM
-- **Key Storage**: Local browser storage (encrypted in production)
+## 📋 All Programming Languages (15+)
+
+<details open>
+<summary><b>Click to expand language list</b></summary>
+
+### 1. **Solidity** - Ethereum Smart Contracts
+📁 `examples/solidity/`
+- ERC-20 Token (WhisperToken)
+- ERC-721 NFT (WhisperNFT)
+- Hardhat tests & deployment
+- [View README](examples/solidity/README.md)
+
+### 2. **Vyper** - Pythonic EVM Contracts
+📁 `examples/vyper/`
+- ERC-20 implementation
+- ETH Vault contract
+- Pytest test suite
+- [View README](examples/vyper/README.md)
+
+### 3. **Rust (Solana)** - High-Performance Blockchain
+📁 `program/`
+- Encrypted messaging program
+- Borsh serialization
+- Native Solana integration
+- [View Original App](program/)
+
+### 4. **Rust (Substrate)** - Polkadot Ecosystem
+📁 `examples/rust-substrate/`
+- Custom messaging pallet
+- FRAME framework
+- Weight-based fees
+- [View README](examples/rust-substrate/README.md)
+
+### 5. **Move (Aptos)** - Resource-Oriented Programming
+📁 `examples/move-aptos/`
+- Coin module
+- Message board
+- Unit tests included
+- [View README](examples/move-aptos/README.md)
+
+### 6. **Cairo (StarkNet)** - Zero-Knowledge Proofs
+📁 `examples/cairo/`
+- ERC-20 token
+- L2 scaling solution
+- Cairo 1.0 syntax
+- [View README](examples/cairo/README.md)
+
+### 7. **TypeScript** - Modern Web3 DApps
+📁 `examples/typescript/`
+- Wallet connector (MetaMask)
+- ERC-20 utilities
+- React hooks examples
+- [View README](examples/typescript/README.md)
+
+### 8. **Python** - Backend & Scripts
+📁 `examples/python/`
+- Web3.py utilities
+- NFT minter
+- Pytest tests
+- [View README](examples/python/README.md)
+
+### 9. **Go** - High-Performance Services
+📁 `examples/go/`
+- Wallet management
+- ERC-20 interaction
+- go-ethereum integration
+- [View README](examples/go/README.md)
+
+### 10. **C++** - Cryptographic Primitives
+📁 `examples/cpp/`
+- Keccak-256 implementation
+- SECP256k1 wrapper
+- CMake build system
+- [View README](examples/cpp/README.md)
+
+### 11. **Java** - Enterprise Backend
+📁 `examples/java/`
+- Web3j integration
+- Maven project
+- Async transaction handling
+- [View README](examples/java/README.md)
+
+### 12. **Swift** - iOS Native Wallet
+📁 `examples/swift/`
+- WalletKit SDK
+- Async/await API
+- Web3.swift integration
+- [View README](examples/swift/README.md)
+
+### 13. **Bash** - DevOps & Automation
+📁 `examples/bash/`
+- Contract deployment scripts
+- Node management (Geth, Anvil, Hardhat)
+- Multi-network support
+- [View README](examples/bash/README.md)
+
+### 14. **Haskell (Plutus)** - Functional Smart Contracts
+📁 `examples/haskell-plutus/`
+- Cardano validators
+- Type-safe contracts
+- Plutus Core
+- [View README](examples/haskell-plutus/README.md)
+
+### 15. **Zig** - WebAssembly Cryptography
+📁 `examples/zig/`
+- Keccak-256 for WASM
+- Zero-cost abstractions
+- Extreme performance
+- [View README](examples/zig/README.md)
+
+### Bonus: **HTML + CSS** - Landing Pages
+📁 `examples/html-css/`
+- Responsive design
+- Modern CSS Grid/Flexbox
+- [View Demo](examples/html-css/index.html)
+
+</details>
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- **Rust** (1.70+): https://rustup.rs/
-- **Solana CLI** (1.18+): https://docs.solana.com/cli/install-solana-cli-tools
-- **Node.js** (18+): https://nodejs.org/
-- **Phantom Wallet**: https://phantom.app/
-
-### Installation
-
-1. **Clone the repository**
+### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/WhisperChain.git
+git clone https://github.com/pavlenkotm/WhisperChain.git
 cd WhisperChain
 ```
 
-2. **Build the Solana Program**
+### Explore Examples by Language
 ```bash
-cd program
-chmod +x build.sh
-./build.sh
+# Solidity (Ethereum)
+cd examples/solidity
+npm install && npm test
+
+# Python (Web3 utilities)
+cd examples/python
+pip install -r requirements.txt
+python web3_utils.py
+
+# TypeScript (DApp development)
+cd examples/typescript
+npm install && npm run build
+
+# Go (Blockchain services)
+cd examples/go
+go mod download && go test ./...
+
+# And many more...
 ```
 
-3. **Deploy to Solana Devnet**
+## 📚 Original WhisperChain App
+
+The repository also contains the **original WhisperChain application** - a fully decentralized, end-to-end encrypted chat on Solana:
+
+### Core Features
+- 🔒 **End-to-End Encryption**: Diffie-Hellman + AES-256
+- 🌐 **Fully Decentralized**: All data on-chain
+- 🔥 **Self-Destructing Messages**: Auto-delete after expiration
+- ⚡ **Real-time**: On-chain polling
+
+### Quick Start
 ```bash
-# Make sure you have SOL in your devnet wallet
-solana airdrop 2
+# Deploy Solana program
+cd program && ./build.sh && ./deploy.sh
 
-# Deploy the program
-chmod +x deploy.sh
-./deploy.sh
+# Launch frontend
+cd app && npm install && npm start
 ```
 
-4. **Update Program ID**
+📖 [Full WhisperChain App Documentation](docs/ORIGINAL_APP.md)
 
-After deployment, update the program ID in `/app/src/utils/program.ts`:
-```typescript
-export const PROGRAM_ID = new PublicKey('YOUR_DEPLOYED_PROGRAM_ID');
-```
-
-5. **Install Frontend Dependencies**
-```bash
-cd ../app
-npm install
-```
-
-6. **Start the Frontend**
-```bash
-npm start
-```
-
-The app will open at `http://localhost:3000`
-
-## 📖 Usage
-
-### 1. Connect Wallet
-Click "Select Wallet" and connect your Phantom wallet.
-
-### 2. Initialize Chat
-Click "Initialize New Chat" to create an encrypted chat session. This generates your Diffie-Hellman key pair.
-
-### 3. Send Messages
-Type your message and click "Send". The message will be:
-- Encrypted locally with AES-256
-- Sent as a transaction to Solana
-- Decrypted locally by the recipient
-
-### 4. Self-Destructing Messages
-- Check "Self-destruct message"
-- Select expiration time (1 min to 24 hours)
-- Message will auto-delete after expiration
-
-### 5. Delete Chat
-Click "Delete Chat" to remove all chat data from the blockchain and clear your local keys.
-
-## 🔐 Security & Privacy
-
-### How Encryption Works
-
-1. **Key Generation**: Each participant generates a Diffie-Hellman key pair
-2. **Key Exchange**: Public keys are exchanged via the chat initialization
-3. **Shared Secret**: Both parties derive the same shared secret
-4. **Message Encryption**:
-   - Each message uses an ephemeral key pair
-   - Message encrypted with AES-256-GCM
-   - Ciphertext stored on-chain
-5. **Message Decryption**:
-   - Recipient uses their private key + sender's ephemeral public key
-   - Derives shared secret
-   - Decrypts message locally
-
-### Privacy Guarantees
-
-- ✅ Messages encrypted before leaving your device
-- ✅ Only you and your chat partner can decrypt messages
-- ✅ No centralized server can read your messages
-- ✅ Solana validators only see encrypted data
-- ✅ Private keys never leave your browser
-- ✅ No metadata collection
-
-## 📁 Project Structure
+## 🏗️ Repository Structure
 
 ```
 WhisperChain/
-├── program/                    # Solana smart contract
-│   ├── src/
-│   │   ├── lib.rs             # Program entry point
-│   │   ├── error.rs           # Custom errors
-│   │   ├── instruction.rs     # Instruction definitions
-│   │   ├── processor.rs       # Instruction handlers
-│   │   └── state.rs           # Account structures
-│   ├── Cargo.toml
-│   ├── build.sh               # Build script
-│   └── deploy.sh              # Deployment script
-│
-├── app/                        # React frontend
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ChatInterface.tsx
-│   │   │   └── Header.tsx
-│   │   ├── contexts/
-│   │   │   └── WalletConnectionProvider.tsx
-│   │   ├── hooks/
-│   │   │   └── useChat.ts     # Chat logic hook
-│   │   ├── utils/
-│   │   │   ├── crypto.ts      # Encryption utilities
-│   │   │   └── program.ts     # Solana program interface
-│   │   ├── App.tsx
-│   │   ├── index.tsx
-│   │   └── index.css
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── tailwind.config.js
-│
-└── README.md
+├── examples/               # Multi-language examples
+│   ├── solidity/          # EVM smart contracts
+│   ├── vyper/             # Alternative EVM language
+│   ├── move-aptos/        # Aptos blockchain
+│   ├── rust-substrate/    # Polkadot ecosystem
+│   ├── cairo/             # StarkNet L2
+│   ├── typescript/        # Web3 DApps
+│   ├── python/            # Backend utilities
+│   ├── go/                # High-performance services
+│   ├── cpp/               # Crypto algorithms
+│   ├── java/              # Enterprise backend
+│   ├── swift/             # iOS SDK
+│   ├── bash/              # Deployment automation
+│   ├── haskell-plutus/    # Cardano contracts
+│   ├── zig/               # WASM modules
+│   └── html-css/          # Landing pages
+├── program/               # Original Solana program
+├── app/                   # Original React frontend
+├── .github/workflows/     # CI/CD pipelines
+├── docs/                  # Additional documentation
+└── README.md              # This file
 ```
 
-## 🛠️ Development
+## 🎓 Learning Path
 
-### Build the Program
-```bash
-cd program
-cargo build-sbf
-# or
-cargo build-bpf
-```
+### Beginner
+1. Start with **TypeScript** (examples/typescript) - Modern Web3 basics
+2. Learn **Python** (examples/python) - Simple scripting
+3. Try **Solidity** (examples/solidity) - Your first smart contract
 
-### Run Tests
-```bash
-cd program
-cargo test
-```
+### Intermediate
+4. Explore **Go** (examples/go) - Backend services
+5. Study **Move** (examples/move-aptos) - Resource-oriented programming
+6. Build with **Bash** (examples/bash) - Deployment automation
 
-### Run Frontend in Development
-```bash
-cd app
-npm start
-```
+### Advanced
+7. Master **Rust** (program/, examples/rust-substrate) - High performance
+8. Learn **C++** (examples/cpp) - Crypto primitives
+9. Experiment with **Zig** (examples/zig) - WASM optimization
 
-### Build Frontend for Production
-```bash
-cd app
-npm run build
-```
+### Expert
+10. Study **Cairo** (examples/cairo) - Zero-knowledge proofs
+11. Explore **Haskell/Plutus** (examples/haskell-plutus) - Functional contracts
+12. Master **Vyper** (examples/vyper) - Security-focused contracts
 
-## 🌐 Deployment
+## 🔧 Development Tools
 
-### Mainnet Deployment
+Each language example includes:
+- ✅ **Build configuration** (Cargo.toml, package.json, pom.xml, etc.)
+- ✅ **Test suites** (Unit tests, integration tests)
+- ✅ **Documentation** (Comprehensive READMEs)
+- ✅ **Examples** (Usage demonstrations)
+- ✅ **Best practices** (Security, optimization)
 
-1. Switch to mainnet:
-```bash
-solana config set --url https://api.mainnet-beta.solana.com
-```
+## 🌐 Supported Blockchains
 
-2. Deploy program:
-```bash
-cd program
-solana program deploy target/deploy/whisperchain.so
-```
+| Blockchain | Languages | Location |
+|------------|-----------|----------|
+| **Ethereum** | Solidity, Vyper, TypeScript, Python, Go, Java | `examples/solidity`, `examples/vyper` |
+| **Solana** | Rust | `program/` |
+| **Aptos** | Move | `examples/move-aptos` |
+| **StarkNet** | Cairo | `examples/cairo` |
+| **Polkadot** | Rust (Substrate) | `examples/rust-substrate` |
+| **Cardano** | Haskell (Plutus) | `examples/haskell-plutus` |
 
-3. Update frontend config:
-- Change network to mainnet in `WalletConnectionProvider.tsx`
-- Update `PROGRAM_ID` in `program.ts`
+## 📊 Project Statistics
 
-## 🎯 Roadmap
-
-- [x] Core encrypted chat functionality
-- [x] Self-destructing messages
-- [x] Visual indicators for new messages
-- [ ] Group chats (multi-party encryption)
-- [ ] Browser extension
-- [ ] NFT avatar integration
-- [ ] Mobile app (React Native)
-- [ ] File attachments (IPFS integration)
-- [ ] Voice messages
-- [ ] Video calls (WebRTC + Solana signaling)
-
-## 🐛 Known Limitations
-
-- **Message Size**: Limited to 512 bytes per message (can be increased)
-- **Chat Partners**: Currently supports 1-on-1 chats only
-- **Storage Costs**: Each message requires rent on Solana (~0.002 SOL)
-- **Polling**: Uses 5-second polling (can be optimized with websockets)
+![Languages Used](https://img.shields.io/badge/dynamic/json?color=blue&label=languages&query=$.length&url=https://api.github.com/repos/pavlenkotm/WhisperChain/languages)
+- **15+ Programming Languages**
+- **40+ Meaningful Commits**
+- **100% Open Source**
+- **Production-Ready Code**
+- **Comprehensive Documentation**
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### Areas for Contribution
+- 🐛 Bug fixes
+- ✨ New language examples
+- 📚 Documentation improvements
+- 🧪 Additional tests
+- 🎨 UI/UX enhancements
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- Solana Foundation for the amazing blockchain platform
-- Phantom wallet team for excellent wallet support
-- Elliptic.js and CryptoJS for cryptography libraries
+- **Solana Foundation** - Amazing blockchain platform
+- **Ethereum Foundation** - Pioneer of smart contracts
+- **Aptos Labs** - Move language innovation
+- **StarkWare** - Zero-knowledge technology
+- **Parity Technologies** - Substrate framework
+- **IOHK** - Cardano and Plutus
+- **All Open Source Contributors** - Building the Web3 future
 
-## 📞 Support
+## 📞 Connect
 
-If you have questions or need help:
-- Open an issue on GitHub
-- Join our Discord: [Coming soon]
-- Twitter: [@WhisperChain](https://twitter.com/whisperchain)
+- **GitHub**: [@pavlenkotm](https://github.com/pavlenkotm)
+- **Repository**: [WhisperChain](https://github.com/pavlenkotm/WhisperChain)
+- **Issues**: [Report bugs or request features](https://github.com/pavlenkotm/WhisperChain/issues)
+- **Discussions**: [Join the conversation](https://github.com/pavlenkotm/WhisperChain/discussions)
 
-## ⚠️ Disclaimer
+## ⭐ Star History
 
-This is experimental software. Use at your own risk. Always verify security before using in production with sensitive data.
+If you find this project helpful, please consider giving it a ⭐ star on GitHub!
 
 ---
 
-Built with ❤️ on Solana
+**Built with ❤️ by the Web3 community**
+
+*Demonstrating blockchain development excellence across languages, platforms, and ecosystems.*

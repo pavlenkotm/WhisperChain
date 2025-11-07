@@ -1,29 +1,110 @@
-# Solana
+# Solana / Rust
 /program/target/
 /program/Cargo.lock
+**/target/
+**/Cargo.lock
+*.rs.bk
 
-# Node
+# Node / TypeScript / JavaScript
 /app/node_modules/
 /app/build/
 /app/package-lock.json
+**/node_modules/
+**/dist/
+**/build/
+package-lock.json
+yarn.lock
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+go.sum
+vendor/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+.mvn/
+mvn wrapper.properties
+
+# C++
+*.o
+*.a
+*.out
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Zig
+zig-cache/
+zig-out/
+
+# Haskell
+dist/
+cabal-dev/
+*.hi
+*.chi
+*.chs.h
+.cabal-sandbox/
+
+# Cairo / StarkNet
+*.sierra.json
+*.casm.json
+
+# Move
+.aptos/
+.movement/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.suo
+*.user
+.vs/
 
 # OS
 .DS_Store
 Thumbs.db
+*.tmp
 
 # Env
 .env
 .env.local
 .env.production
+.env.test
+*.key
+*.pem
 
 # Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+logs/
+
+# Deployment
+deployments/
+deployment.json
