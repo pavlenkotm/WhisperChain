@@ -1,0 +1,17 @@
+[package]
+name = "whisper-chain-move"
+version = "1.0.0"
+authors = ["WhisperChain Team"]
+
+[addresses]
+whisper_addr = "_"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-addresses]
+whisper_addr = "0x123"
+
+[dev-dependencies]
