@@ -110,11 +110,12 @@ func (w *Wallet) SignMessage(message []byte) ([]byte, error) {
 func VerifySignature(message []byte, signature []byte, address common.Address) bool {
 	hash := crypto.Keccak256Hash(message)
 
-	// Remove recovery ID
-	if len(signature) == 65 {
-		signature = signature[:64]
+	// Ensure signature has correct length (65 bytes including recovery ID)
+	if len(signature) != 65 {
+		return false
 	}
 
+	// Recover public key from signature (requires full 65-byte signature)
 	publicKey, err := crypto.SigToPub(hash.Bytes(), signature)
 	if err != nil {
 		return false

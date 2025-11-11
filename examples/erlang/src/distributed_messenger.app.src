@@ -1,0 +1,15 @@
+{application, distributed_messenger,
+ [{description, "Distributed P2P Messaging Node for Blockchain"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {distributed_messenger_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    crypto
+   ]},
+  {env,[]},
+  {modules, []},
+  {licenses, ["MIT"]},
+  {links, []}
+ ]}.
