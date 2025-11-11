@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/pavlenkotm/WhisperChain?style=social)](https://github.com/pavlenkotm/WhisperChain)
 [![Commits](https://img.shields.io/github/commit-activity/m/pavlenkotm/WhisperChain)](https://github.com/pavlenkotm/WhisperChain/commits)
-[![Languages](https://img.shields.io/badge/languages-15%2B-brightgreen)]()
+[![Languages](https://img.shields.io/badge/languages-21%2B-brightgreen)]()
 
-> **Professional blockchain development examples across 15+ programming languages**
-> From EVM smart contracts to Layer 2 solutions, backend services to mobile SDKs
+> **Professional blockchain development examples across 21+ programming languages**
+> From EVM smart contracts to Layer 2 solutions, backend services to mobile SDKs, featuring exotic languages
 
 ## 🌟 What is WhisperChain?
 
@@ -30,7 +30,7 @@ This repository demonstrates **production-quality code** for:
 | **DevOps** | Bash, Docker | [Deployment](#bash), [CI/CD](#github-actions) |
 | **Frontend** | TypeScript, HTML/CSS | [DApp UI](#typescript), [Landing Page](#html-css) |
 
-## 📋 All Programming Languages (15+)
+## 📋 All Programming Languages (21+)
 
 <details open>
 <summary><b>Click to expand language list</b></summary>
@@ -140,6 +140,54 @@ This repository demonstrates **production-quality code** for:
 - Extreme performance
 - [View README](examples/zig/README.md)
 
+### 16. **Elixir** - Distributed Blockchain Nodes
+📁 `examples/elixir/`
+- Fault-tolerant blockchain node
+- Proof of Work consensus
+- GenServer architecture
+- Built on battle-tested Erlang VM
+- [View README](examples/elixir/README.md)
+
+### 17. **Crystal** - High-Performance Web3 Client
+📁 `examples/crystal/`
+- Ruby syntax, C performance
+- Type-safe Web3 interactions
+- JSON-RPC client
+- 10-100x faster than Ruby
+- [View README](examples/crystal/README.md)
+
+### 18. **Nim** - Cryptographic Primitives
+📁 `examples/nim/`
+- Python-like syntax, C speed
+- Keccak-256, SHA-256, HMAC
+- Merkle trees & key derivation
+- ECDSA signing & verification
+- [View README](examples/nim/README.md)
+
+### 19. **F#** - Blockchain Data Analytics
+📁 `examples/fsharp/`
+- Functional data analysis
+- Transaction metrics
+- Time series analytics
+- Whale detection & pattern recognition
+- [View README](examples/fsharp/README.md)
+
+### 20. **Erlang** - Distributed Messaging
+📁 `examples/erlang/`
+- 99.9999999% uptime design
+- P2P messaging nodes
+- Fault tolerance built-in
+- Hot code reloading
+- [View README](examples/erlang/README.md)
+
+### 21. **OCaml** - Tezos Smart Contracts
+📁 `examples/ocaml/`
+- FA2 token standard
+- Type-safe smart contracts
+- Pattern matching elegance
+- Official Tezos language
+- [View README](examples/ocaml/README.md)
+
 ### Bonus: **HTML + CSS** - Landing Pages
 📁 `examples/html-css/`
 - Responsive design
@@ -218,6 +266,12 @@ WhisperChain/
 │   ├── bash/              # Deployment automation
 │   ├── haskell-plutus/    # Cardano contracts
 │   ├── zig/               # WASM modules
+│   ├── elixir/            # Distributed blockchain nodes
+│   ├── crystal/           # High-performance Web3 client
+│   ├── nim/               # Cryptographic primitives
+│   ├── fsharp/            # Blockchain data analytics
+│   ├── erlang/            # Distributed messaging
+│   ├── ocaml/             # Tezos smart contracts
 │   └── html-css/          # Landing pages
 ├── program/               # Original Solana program
 ├── app/                   # Original React frontend
@@ -267,15 +321,18 @@ Each language example includes:
 | **StarkNet** | Cairo | `examples/cairo` |
 | **Polkadot** | Rust (Substrate) | `examples/rust-substrate` |
 | **Cardano** | Haskell (Plutus) | `examples/haskell-plutus` |
+| **Tezos** | OCaml | `examples/ocaml` |
+| **Multi-chain** | Elixir, Crystal, Nim, F#, Erlang | Various examples |
 
 ## 📊 Project Statistics
 
 ![Languages Used](https://img.shields.io/badge/dynamic/json?color=blue&label=languages&query=$.length&url=https://api.github.com/repos/pavlenkotm/WhisperChain/languages)
-- **15+ Programming Languages**
-- **40+ Meaningful Commits**
+- **21+ Programming Languages** (including 6 exotic ones!)
+- **50+ Meaningful Commits**
 - **100% Open Source**
 - **Production-Ready Code**
 - **Comprehensive Documentation**
+- **Blockchain Polyglot Paradise**
 
 ## 🤝 Contributing
 

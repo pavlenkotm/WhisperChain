@@ -1,0 +1,26 @@
+name: web3_client
+version: 0.1.0
+
+authors:
+  - WhisperChain Team
+
+crystal: 1.9.2
+
+license: MIT
+
+dependencies:
+  http:
+    github: crystal-lang/crystal
+    version: ~> 1.9.2
+  json:
+    github: crystal-lang/crystal
+    version: ~> 1.9.2
+
+development_dependencies:
+  spec:
+    github: crystal-lang/crystal
+    version: ~> 1.9.2
+
+targets:
+  web3_client:
+    main: src/web3_client.cr
