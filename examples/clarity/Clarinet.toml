@@ -1,0 +1,16 @@
+[project]
+name = "whisper-token"
+description = "WhisperChain token on Stacks (Bitcoin L2)"
+authors = ["WhisperChain Team"]
+telemetry_enabled = false
+cache_dir = ".cache"
+requirements = []
+
+[contracts.whisper-token]
+path = "contracts/whisper-token.clar"
+clarity_version = 2
+epoch = 2.4
+
+[repl]
+costs_version = 2
+parser_version = 2

@@ -3,9 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/pavlenkotm/WhisperChain?style=social)](https://github.com/pavlenkotm/WhisperChain)
 [![Commits](https://img.shields.io/github/commit-activity/m/pavlenkotm/WhisperChain)](https://github.com/pavlenkotm/WhisperChain/commits)
-[![Languages](https://img.shields.io/badge/languages-21%2B-brightgreen)]()
+[![Languages](https://img.shields.io/badge/languages-24%2B-brightgreen)]()
 
-> **Professional blockchain development examples across 21+ programming languages**
+> **Professional blockchain development examples across 24+ programming languages**
 > From EVM smart contracts to Layer 2 solutions, backend services to mobile SDKs, featuring exotic languages
 
 ## 🌟 What is WhisperChain?
@@ -13,7 +13,7 @@
 WhisperChain started as a decentralized encrypted chat application on Solana and has evolved into a **comprehensive showcase of Web3 development across multiple blockchains, languages, and platforms**.
 
 This repository demonstrates **production-quality code** for:
-- ✅ Smart contract development (EVM, Solana, Move, Cairo, Substrate)
+- ✅ Smart contract development (EVM, Solana, Move, Cairo, Substrate, Stacks, ICP)
 - ✅ Backend services and APIs
 - ✅ Mobile wallet SDKs
 - ✅ High-performance crypto libraries
@@ -23,14 +23,14 @@ This repository demonstrates **production-quality code** for:
 
 | Category | Languages | Examples |
 |----------|-----------|----------|
-| **Smart Contracts** | Solidity, Vyper, Rust, Move, Cairo, Haskell | [ERC-20](#solidity), [NFTs](#solidity), [DeFi](#move) |
+| **Smart Contracts** | Solidity, Vyper, Rust, Move, Cairo, ink!, Clarity, Motoko, Haskell | [ERC-20](#solidity), [NFTs](#solidity), [DeFi](#move) |
 | **Backend Services** | Python, TypeScript, Go, Java | [Web3 APIs](#python), [Indexers](#go) |
 | **Mobile SDKs** | Swift, Java/Kotlin | [iOS Wallet](#swift), [Android](#java) |
 | **Performance** | C++, Rust, Zig | [Crypto Primitives](#cpp), [WASM](#zig) |
 | **DevOps** | Bash, Docker | [Deployment](#bash), [CI/CD](#github-actions) |
 | **Frontend** | TypeScript, HTML/CSS | [DApp UI](#typescript), [Landing Page](#html-css) |
 
-## 📋 All Programming Languages (21+)
+## 📋 All Programming Languages (24+)
 
 <details open>
 <summary><b>Click to expand language list</b></summary>
@@ -63,84 +63,105 @@ This repository demonstrates **production-quality code** for:
 - Weight-based fees
 - [View README](examples/rust-substrate/README.md)
 
-### 5. **Move (Aptos)** - Resource-Oriented Programming
+### 5. **ink!** - Polkadot Smart Contracts
+📁 `examples/ink/`
+- Rust-based WebAssembly contracts
+- ERC-20 token implementation
+- Substrate/Polkadot compatible
+- [View README](examples/ink/README.md)
+
+### 6. **Move (Aptos)** - Resource-Oriented Programming
 📁 `examples/move-aptos/`
 - Coin module
 - Message board
 - Unit tests included
 - [View README](examples/move-aptos/README.md)
 
-### 6. **Cairo (StarkNet)** - Zero-Knowledge Proofs
+### 7. **Cairo (StarkNet)** - Zero-Knowledge Proofs
 📁 `examples/cairo/`
 - ERC-20 token
 - L2 scaling solution
 - Cairo 1.0 syntax
 - [View README](examples/cairo/README.md)
 
-### 7. **TypeScript** - Modern Web3 DApps
+### 8. **Clarity** - Bitcoin Layer 2 Smart Contracts
+📁 `examples/clarity/`
+- Decidable smart contracts for Stacks
+- SIP-010 fungible token (Bitcoin L2)
+- Lisp-like syntax with security guarantees
+- [View README](examples/clarity/README.md)
+
+### 9. **Motoko** - Internet Computer Canisters
+📁 `examples/motoko/`
+- Actor-based smart contracts for ICP
+- Fungible token with DFINITY SDK
+- WebAssembly on Internet Computer
+- [View README](examples/motoko/README.md)
+
+### 10. **TypeScript** - Modern Web3 DApps
 📁 `examples/typescript/`
 - Wallet connector (MetaMask)
 - ERC-20 utilities
 - React hooks examples
 - [View README](examples/typescript/README.md)
 
-### 8. **Python** - Backend & Scripts
+### 11. **Python** - Backend & Scripts
 📁 `examples/python/`
 - Web3.py utilities
 - NFT minter
 - Pytest tests
 - [View README](examples/python/README.md)
 
-### 9. **Go** - High-Performance Services
+### 12. **Go** - High-Performance Services
 📁 `examples/go/`
 - Wallet management
 - ERC-20 interaction
 - go-ethereum integration
 - [View README](examples/go/README.md)
 
-### 10. **C++** - Cryptographic Primitives
+### 13. **C++** - Cryptographic Primitives
 📁 `examples/cpp/`
 - Keccak-256 implementation
 - SECP256k1 wrapper
 - CMake build system
 - [View README](examples/cpp/README.md)
 
-### 11. **Java** - Enterprise Backend
+### 14. **Java** - Enterprise Backend
 📁 `examples/java/`
 - Web3j integration
 - Maven project
 - Async transaction handling
 - [View README](examples/java/README.md)
 
-### 12. **Swift** - iOS Native Wallet
+### 15. **Swift** - iOS Native Wallet
 📁 `examples/swift/`
 - WalletKit SDK
 - Async/await API
 - Web3.swift integration
 - [View README](examples/swift/README.md)
 
-### 13. **Bash** - DevOps & Automation
+### 16. **Bash** - DevOps & Automation
 📁 `examples/bash/`
 - Contract deployment scripts
 - Node management (Geth, Anvil, Hardhat)
 - Multi-network support
 - [View README](examples/bash/README.md)
 
-### 14. **Haskell (Plutus)** - Functional Smart Contracts
+### 17. **Haskell (Plutus)** - Functional Smart Contracts
 📁 `examples/haskell-plutus/`
 - Cardano validators
 - Type-safe contracts
 - Plutus Core
 - [View README](examples/haskell-plutus/README.md)
 
-### 15. **Zig** - WebAssembly Cryptography
+### 18. **Zig** - WebAssembly Cryptography
 📁 `examples/zig/`
 - Keccak-256 for WASM
 - Zero-cost abstractions
 - Extreme performance
 - [View README](examples/zig/README.md)
 
-### 16. **Elixir** - Distributed Blockchain Nodes
+### 19. **Elixir** - Distributed Blockchain Nodes
 📁 `examples/elixir/`
 - Fault-tolerant blockchain node
 - Proof of Work consensus
@@ -148,7 +169,7 @@ This repository demonstrates **production-quality code** for:
 - Built on battle-tested Erlang VM
 - [View README](examples/elixir/README.md)
 
-### 17. **Crystal** - High-Performance Web3 Client
+### 20. **Crystal** - High-Performance Web3 Client
 📁 `examples/crystal/`
 - Ruby syntax, C performance
 - Type-safe Web3 interactions
@@ -156,7 +177,7 @@ This repository demonstrates **production-quality code** for:
 - 10-100x faster than Ruby
 - [View README](examples/crystal/README.md)
 
-### 18. **Nim** - Cryptographic Primitives
+### 21. **Nim** - Cryptographic Primitives
 📁 `examples/nim/`
 - Python-like syntax, C speed
 - Keccak-256, SHA-256, HMAC
@@ -164,7 +185,7 @@ This repository demonstrates **production-quality code** for:
 - ECDSA signing & verification
 - [View README](examples/nim/README.md)
 
-### 19. **F#** - Blockchain Data Analytics
+### 22. **F#** - Blockchain Data Analytics
 📁 `examples/fsharp/`
 - Functional data analysis
 - Transaction metrics
@@ -172,7 +193,7 @@ This repository demonstrates **production-quality code** for:
 - Whale detection & pattern recognition
 - [View README](examples/fsharp/README.md)
 
-### 20. **Erlang** - Distributed Messaging
+### 23. **Erlang** - Distributed Messaging
 📁 `examples/erlang/`
 - 99.9999999% uptime design
 - P2P messaging nodes
@@ -180,7 +201,7 @@ This repository demonstrates **production-quality code** for:
 - Hot code reloading
 - [View README](examples/erlang/README.md)
 
-### 21. **OCaml** - Tezos Smart Contracts
+### 24. **OCaml** - Tezos Smart Contracts
 📁 `examples/ocaml/`
 - FA2 token standard
 - Type-safe smart contracts
@@ -255,8 +276,11 @@ WhisperChain/
 │   ├── solidity/          # EVM smart contracts
 │   ├── vyper/             # Alternative EVM language
 │   ├── move-aptos/        # Aptos blockchain
-│   ├── rust-substrate/    # Polkadot ecosystem
+│   ├── rust-substrate/    # Polkadot ecosystem (pallets)
+│   ├── ink/               # Polkadot smart contracts
 │   ├── cairo/             # StarkNet L2
+│   ├── clarity/           # Stacks (Bitcoin L2)
+│   ├── motoko/            # Internet Computer (ICP)
 │   ├── typescript/        # Web3 DApps
 │   ├── python/            # Backend utilities
 │   ├── go/                # High-performance services
