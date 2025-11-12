@@ -7,18 +7,27 @@ Detailed guide for each programming language in the WhisperChain repository.
 1. [Solidity](#solidity)
 2. [Vyper](#vyper)
 3. [Rust](#rust)
-4. [Move](#move)
-5. [Cairo](#cairo)
-6. [TypeScript](#typescript)
-7. [Python](#python)
-8. [Go](#go)
-9. [C++](#cpp)
-10. [Java](#java)
-11. [Swift](#swift)
-12. [Bash](#bash)
-13. [Haskell](#haskell)
-14. [Zig](#zig)
-15. [HTML/CSS](#htmlcss)
+4. [ink!](#ink)
+5. [Move](#move)
+6. [Cairo](#cairo)
+7. [Clarity](#clarity)
+8. [Motoko](#motoko)
+9. [TypeScript](#typescript)
+10. [Python](#python)
+11. [Go](#go)
+12. [C++](#cpp)
+13. [Java](#java)
+14. [Swift](#swift)
+15. [Bash](#bash)
+16. [Haskell](#haskell)
+17. [Zig](#zig)
+18. [Elixir](#elixir)
+19. [Crystal](#crystal)
+20. [Nim](#nim)
+21. [F#](#fsharp)
+22. [Erlang](#erlang)
+23. [OCaml](#ocaml)
+24. [HTML/CSS](#htmlcss)
 
 ---
 
@@ -98,6 +107,148 @@ cargo build-bpf
 cd examples/rust-substrate
 cargo build --release
 ```
+
+---
+
+## ink!
+
+### Use Cases
+- Polkadot smart contracts
+- Substrate-based chains
+- WebAssembly contracts
+- Parachain development
+
+### Example Location
+`examples/ink/`
+
+### Key Features
+- Rust-based with macros
+- Small contract sizes (5-50KB)
+- Type-safe by design
+- Built-in testing framework
+
+### Quick Commands
+```bash
+cd examples/ink
+cargo contract build --release
+cargo test
+cargo contract instantiate --constructor new --args 1000000
+```
+
+### Learning Resources
+- [ink! Docs](https://use.ink/)
+- [Substrate Docs](https://docs.substrate.io/)
+
+---
+
+## Move
+
+### Use Cases
+- Aptos blockchain
+- Sui blockchain
+- Resource-oriented programming
+
+### Example Location
+`examples/move-aptos/`
+
+### Key Features
+- Resource safety
+- Formal verification
+- Linear types
+- Module system
+
+### Quick Commands
+```bash
+cd examples/move-aptos
+aptos move compile
+aptos move test
+aptos move publish
+```
+
+---
+
+## Cairo
+
+### Use Cases
+- StarkNet L2 contracts
+- Zero-knowledge proofs
+- Scalable computation
+
+### Example Location
+`examples/cairo/`
+
+### Key Features
+- ZK-STARK support
+- L2 scaling
+- Provable computation
+
+### Quick Commands
+```bash
+cd examples/cairo
+scarb build
+scarb test
+starkli deploy
+```
+
+---
+
+## Clarity
+
+### Use Cases
+- Bitcoin Layer 2 contracts
+- Stacks blockchain
+- Decidable smart contracts
+
+### Example Location
+`examples/clarity/`
+
+### Key Features
+- Lisp-like syntax
+- No recursion (decidable)
+- Post-conditions
+- Bitcoin-secured
+
+### Quick Commands
+```bash
+cd examples/clarity
+clarinet check
+clarinet test
+clarinet deployments generate --testnet
+```
+
+### Learning Resources
+- [Clarity Docs](https://docs.stacks.co/clarity)
+- [Clarinet Tool](https://github.com/hirosystems/clarinet)
+
+---
+
+## Motoko
+
+### Use Cases
+- Internet Computer canisters
+- Decentralized web apps
+- Actor-based programming
+
+### Example Location
+`examples/motoko/`
+
+### Key Features
+- Actor model
+- Orthogonal persistence
+- Async/await support
+- WebAssembly backend
+
+### Quick Commands
+```bash
+cd examples/motoko
+dfx start --background
+dfx deploy
+dfx canister call whisper_token init
+```
+
+### Learning Resources
+- [Motoko Docs](https://internetcomputer.org/docs/current/motoko/main/motoko)
+- [DFINITY SDK](https://github.com/dfinity/sdk)
 
 ---
 
