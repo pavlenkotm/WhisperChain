@@ -1,6 +1,6 @@
-web3==6.11.3
-eth-account==0.10.0
-eth-utils==2.3.1
+web3>=7.14.0
+eth-account>=0.13.7
+eth-utils>=5.3.1
 requests==2.31.0
 pytest==7.4.3
 python-dotenv==1.0.0

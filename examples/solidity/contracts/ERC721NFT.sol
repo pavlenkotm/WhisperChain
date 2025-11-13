@@ -5,7 +5,6 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
 
 /**
  * @title WhisperNFT
@@ -13,9 +12,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
  * Features: Minting, Burning, URI storage, Ownership
  */
 contract WhisperNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
-    using Counters for Counters.Counter;
-
-    Counters.Counter private _tokenIdCounter;
+    uint256 private _tokenIdCounter;
     uint256 public constant MAX_SUPPLY = 10000;
     uint256 public mintPrice = 0.01 ether;
 
@@ -26,7 +23,7 @@ contract WhisperNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
         ERC721("WhisperNFT", "WNFT")
         Ownable(initialOwner)
     {
-        _tokenIdCounter.increment(); // Start from token ID 1
+        _tokenIdCounter = 1; // Start from token ID 1
     }
 
     /**
@@ -35,11 +32,11 @@ contract WhisperNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
      * @param uri Metadata URI for the NFT
      */
     function mint(address to, string memory uri) public payable {
-        require(_tokenIdCounter.current() <= MAX_SUPPLY, "Max supply reached");
+        require(_tokenIdCounter <= MAX_SUPPLY, "Max supply reached");
         require(msg.value >= mintPrice, "Insufficient payment");
 
-        uint256 tokenId = _tokenIdCounter.current();
-        _tokenIdCounter.increment();
+        uint256 tokenId = _tokenIdCounter;
+        _tokenIdCounter++;
 
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
@@ -53,10 +50,10 @@ contract WhisperNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
      * @param uri Metadata URI for the NFT
      */
     function ownerMint(address to, string memory uri) public onlyOwner {
-        require(_tokenIdCounter.current() <= MAX_SUPPLY, "Max supply reached");
+        require(_tokenIdCounter <= MAX_SUPPLY, "Max supply reached");
 
-        uint256 tokenId = _tokenIdCounter.current();
-        _tokenIdCounter.increment();
+        uint256 tokenId = _tokenIdCounter;
+        _tokenIdCounter++;
 
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
@@ -86,7 +83,7 @@ contract WhisperNFT is ERC721, ERC721URIStorage, ERC721Burnable, Ownable {
      * @dev Get total number of minted NFTs
      */
     function totalSupply() public view returns (uint256) {
-        return _tokenIdCounter.current() - 1;
+        return _tokenIdCounter - 1;
     }
 
     // Required overrides
