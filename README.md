@@ -1,23 +1,49 @@
-# 🔗 WhisperChain - Web3 Multi-Language Playground
+# 🔗 WhisperChain - Web3 Development Ecosystem
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/pavlenkotm/WhisperChain?style=social)](https://github.com/pavlenkotm/WhisperChain)
 [![Commits](https://img.shields.io/github/commit-activity/m/pavlenkotm/WhisperChain)](https://github.com/pavlenkotm/WhisperChain/commits)
 [![Languages](https://img.shields.io/badge/languages-24%2B-brightgreen)]()
+[![npm version](https://img.shields.io/badge/npm-@whisperchain%2Fsdk-blue)](https://www.npmjs.com/package/@whisperchain/sdk)
 
-> **Professional blockchain development examples across 24+ programming languages**
-> From EVM smart contracts to Layer 2 solutions, backend services to mobile SDKs, featuring exotic languages
+> **Complete Web3 development ecosystem with production-ready NPM packages, CLI tools, SDK, and examples in 24+ programming languages**
+
+## 🚀 NEW: WhisperChain Ecosystem
+
+WhisperChain has evolved into a **full development ecosystem**! Now featuring:
+
+- 📦 **NPM Packages** - Production-ready libraries (`@whisperchain/sdk`, `@whisperchain/crypto`, etc.)
+- 🛠️ **CLI Tools** - Command-line interface for developers (`whisperchain` CLI)
+- 💻 **TypeScript SDK** - Comprehensive SDK for Web3 development
+- 🏗️ **Monorepo** - Organized workspace with shared configurations
+- 📚 **Complete Documentation** - API reference, guides, and tutorials
+
+### Quick Install
+
+```bash
+# Install the SDK
+npm install @whisperchain/sdk
+
+# Or install the CLI globally
+npm install -g @whisperchain/cli
+```
+
+**📖 [View Ecosystem Documentation](README_ECOSYSTEM.md)** | **📘 [API Reference](docs/API.md)** | **🏛️ [Architecture Guide](docs/ECOSYSTEM.md)**
+
+---
 
 ## 🌟 What is WhisperChain?
 
-WhisperChain started as a decentralized encrypted chat application on Solana and has evolved into a **comprehensive showcase of Web3 development across multiple blockchains, languages, and platforms**.
+WhisperChain started as a decentralized encrypted chat application on Solana and has evolved into a **comprehensive Web3 development ecosystem with production-ready packages and examples across multiple blockchains, languages, and platforms**.
 
-This repository demonstrates **production-quality code** for:
-- ✅ Smart contract development (EVM, Solana, Move, Cairo, Substrate, Stacks, ICP)
-- ✅ Backend services and APIs
-- ✅ Mobile wallet SDKs
-- ✅ High-performance crypto libraries
-- ✅ Deployment automation
+This repository includes:
+- ✅ **Production NPM packages** - SDK, crypto utilities, CLI tools
+- ✅ **Smart contract development** - EVM, Solana, Move, Cairo, Substrate, Stacks, ICP
+- ✅ **Backend services and APIs** - TypeScript, Python, Go, Java
+- ✅ **Mobile wallet SDKs** - Swift, Kotlin
+- ✅ **High-performance crypto libraries** - C++, Rust, Zig
+- ✅ **Deployment automation** - CI/CD, scripts
+- ✅ **24+ programming languages** - Complete examples
 
 ## 🎯 Quick Navigation
 

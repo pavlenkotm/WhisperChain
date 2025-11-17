@@ -1,0 +1,24 @@
+{
+  "name": "@whisperchain/core",
+  "version": "1.0.0",
+  "description": "Core utilities for WhisperChain ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "jest"
+  },
+  "keywords": ["web3", "blockchain", "utilities"],
+  "author": "WhisperChain Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@whisperchain/types": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.0"
+  }
+}

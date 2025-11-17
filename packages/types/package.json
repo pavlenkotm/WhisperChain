@@ -1,0 +1,19 @@
+{
+  "name": "@whisperchain/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for WhisperChain ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "jest"
+  },
+  "keywords": ["web3", "blockchain", "types", "typescript"],
+  "author": "WhisperChain Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
