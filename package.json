@@ -1,0 +1,36 @@
+{
+  "name": "@whisperchain/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WhisperChain - Web3 Multi-Language Development Ecosystem",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build:types && npm run build:packages",
+    "build:types": "npm run build -w @whisperchain/types",
+    "build:packages": "npm run build -w @whisperchain/core && npm run build -w @whisperchain/crypto && npm run build -w @whisperchain/sdk && npm run build -w @whisperchain/cli",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present --parallel",
+    "bootstrap": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "prettier": "^3.1.0",
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pavlenkotm/WhisperChain.git"
+  },
+  "author": "WhisperChain Contributors",
+  "license": "MIT"
+}
